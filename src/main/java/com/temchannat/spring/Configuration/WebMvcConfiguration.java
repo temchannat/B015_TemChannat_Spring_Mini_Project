@@ -6,10 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
@@ -23,10 +20,18 @@ import java.util.Locale;
 @EnableWebMvc
 public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        super.addViewControllers(registry);
+        registry.addViewController("/admin").setViewName("/admin/dashboard");
+        registry.addViewController("/admin/dashboard").setViewName("/admin/dashboard");
+    }
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         super.addResourceHandlers(registry);
-        registry.addResourceHandler("/resources/").addResourceLocations("classpath:/static");
+        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/static");
     }
 
     //1
@@ -34,7 +39,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
     public LocaleResolver localeResolver() {
         CookieLocaleResolver resolver = new CookieLocaleResolver();
         resolver.setDefaultLocale(new Locale("kh"));
-        resolver.setCookieName("Spring_Local");
+        resolver.setCookieName("Spring_Locale");
         resolver.setCookieMaxAge(4800);
         return resolver;
     }
@@ -59,7 +64,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
     @Bean
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("classpath:/i18n/message");
+        messageSource.setBasename("classpath:/i18n/messages/message");
         messageSource.setCacheSeconds(0);
         messageSource.setUseCodeAsDefaultMessage(true);
         messageSource.setDefaultEncoding("UTF-8");
