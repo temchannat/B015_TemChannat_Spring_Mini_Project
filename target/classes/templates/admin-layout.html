@@ -15,17 +15,27 @@
 </head>
 <body>
 
-    <div th:replace="@{/shared/_header}"></div>
+    <div class="mn-content fixed-sidebar">
 
-    <div th:replace="@{/shared/_left-side-bar}"></div>
+        <div th:replace="@{/shared/_header}"></div>
 
-    <div layout:fragment="content"></div>
+        <div th:replace="@{/shared/_left-side-bar}"></div>
 
-    <div th:replace="@{/shared/_footer}"></div>
+        <main class="mn-inner inner-active-sidebar">
 
-    <div th:replace="@{/shared/_right-side-bar}"></div>
+            <div layout:fragment="content"></div>
 
-    <div th:replace="@{/shared/_script}"></div>
+        </main>
+
+        <div th:replace="@{/shared/_footer}"></div>
+
+    </div>
+
+        <div class="left-sidebar-hover"></div>
+
+        <div th:replace="@{/shared/_script}"></div>
+
+
 
 </body>
 </html>

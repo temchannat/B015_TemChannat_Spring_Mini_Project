@@ -1,1 +1,39 @@
-<h1>Left </h1>
+<aside id="slide-out" class="side-nav white fixed">
+    <div class="side-nav-wrapper">
+        <div class="sidebar-profile">
+            <div class="sidebar-profile-image">
+                <img th:src="@{/resources/static/assets/images/channat.jpg}" class="circle" alt="">
+            </div>
+            <div class="sidebar-profile-info">
+                <a href="javascript:void(0);" class="account-settings-link">
+                    <p>Channat Tem</p>
+                    <span>temchannat@gmail.com</span>
+                </a>
+            </div>
+        </div>
+
+        <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+            <li class="no-padding active"><a class="waves-effect waves-grey active" th:href="@{../dashboard}"><i class="material-icons">settings_input_svideo</i><span th:text="#{dashboard}"></span></a></li>
+
+
+            <li class="no-padding">
+                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">desktop_windows</i><span th:text="#{admin}"></span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a th:href="@{../user-list}" th:text="#{userList}"></a></li>
+                        <li><a th:href="@{../user-cu}" th:text="#{addUser}"></a></li>
+                        <li><a th:href="@{../role-list}" th:text="#{roleList}"></a></li>
+                        <li><a th:href="@{../role-cu}" th:text="#{addRole}"></a></li>
+
+                    </ul>
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="footer">
+            <p class="copyright">Channat Tem ©</p>
+            <a href="#!">Privacy</a> &amp; <a href="#!">Terms</a>
+        </div>
+    </div>
+</aside>

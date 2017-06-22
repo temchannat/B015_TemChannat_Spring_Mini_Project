@@ -52,5 +52,17 @@ public class MainController {
     }
 
 
+    @RequestMapping("/role-cu")
+    public String roleCUPage(ModelMap model) {
+        model.addAttribute("USER", new User());
+        return "role-cu";
+    }
+
+    @RequestMapping("/role-c")
+    @ResponseBody
+    public User roleC(@ModelAttribute User user) {
+        return user;
+    }
+
 
 }
