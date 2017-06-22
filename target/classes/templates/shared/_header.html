@@ -48,7 +48,7 @@
                 </a>
             </section>
             <div class="header-title col s3 m3">
-                <span class="chapter-title">Alpha</span>
+                <span class="chapter-title">HRD Spring</span>
             </div>
             <form class="left search col s6 hide-on-small-and-down">
                 <div class="input-field">
@@ -62,8 +62,8 @@
 
             <ul class="right col s9 m3 nav-right-menu">
 
-                <li class="hide-on-small-and-down"><img th:src="@{/resources/static/assets/images/kh.png}" class="circle" alt=""></li>
-                <li class="hide-on-small-and-down"><img th:src="@{/resources/static/assets/images/gb.png}" class="circle" alt=""></li>
+                <li class="hide-on-small-and-down"><a th:href="@{?lang=kh}"><img th:src="@{/resources/static/assets/images/kh.png}" class="circle" alt=""></a> </li>
+                <li class="hide-on-small-and-down"><a th:href="@{?lang=en}"><img th:src="@{/resources/static/assets/images/gb.png}" class="circle" alt=""></a></li>
 
             </ul>
 
@@ -73,6 +73,7 @@
         </div>
     </nav>
 </header>
+
 <div class="search-results">
     <div class="container search-container">
         <div class="row">

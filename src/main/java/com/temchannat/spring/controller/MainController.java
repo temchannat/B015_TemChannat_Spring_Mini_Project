@@ -13,31 +13,22 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class MainController {
 
-    @RequestMapping({"/", "/dashboard"})
-    public String homePage() {
-        return "dashboard";
-    }
+//    @RequestMapping({"/", "/dashboard"})
+//    public String homePage() {
+//        return "dashboard";
+//    }
 
-    @RequestMapping("/user-list")
-    public String userListPage() {
-        return "user-list";
-    }
+//    @RequestMapping("/user-list")
+//    public String userListPage() {
+//        return "user-list";
+//    }
 
-    @RequestMapping("/role-list")
-    public String roleListPage() {
-        return "role-list";
-    }
-
-    @RequestMapping("/about")
-    public String roleAboutPage() {
-        return "about";
-    }
-
-
-
-
-
-
+//    @RequestMapping("/role-list")
+//    public String roleListPage() {
+//        return "role-list";
+//    }
+//
+//
 
     @RequestMapping("/user-cu")
     public String userCUPage(ModelMap model) {

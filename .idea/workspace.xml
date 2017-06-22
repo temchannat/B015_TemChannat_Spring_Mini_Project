@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44512fb-3fd6-42c3-bd5e-6032ed88025b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/role-cu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/role-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-cu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-list.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/templates/shared/_right-side-bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/shared/_right-side-bar.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/temchannat/spring/Configuration/WebMvcConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/temchannat/spring/Configuration/WebMvcConfiguration.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/temchannat/spring/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages/message_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages/message_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages/message_kh.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages/message_kh.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-layout.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/shared/_footer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/shared/_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/shared/_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/shared/_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/shared/_script.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/shared/_script.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/i18n/messages/message_en.properties" afterPath="$PROJECT_DIR$/target/classes/i18n/messages/message_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/i18n/messages/message_kh.properties" afterPath="$PROJECT_DIR$/target/classes/i18n/messages/message_kh.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/admin-layout.html" afterPath="$PROJECT_DIR$/target/classes/templates/admin-layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/shared/_footer.html" afterPath="$PROJECT_DIR$/target/classes/templates/shared/_footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/shared/_header.html" afterPath="$PROJECT_DIR$/target/classes/templates/shared/_header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/shared/_left-side-bar.html" afterPath="$PROJECT_DIR$/target/classes/templates/shared/_left-side-bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/shared/_script.html" afterPath="$PROJECT_DIR$/target/classes/templates/shared/_script.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user-list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="role-cu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role-cu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/role-cu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="348">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <marker date="1498133700000" expanded="true" signature="471:482" ph="Add Data Role" />
                 <marker date="1498133700000" expanded="true" signature="822:828" ph="Role ID" />
@@ -58,11 +37,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="65" column="65" lean-forward="false" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+              <folding>
+                <element signature="n#div#2;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_left-side-bar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="role-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/role-list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="505">
-              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <marker date="1498133662000" expanded="true" signature="416:420" ph="Data User" />
                 <marker date="1498133662000" expanded="true" signature="416:424" ph="Data Role" />
@@ -78,31 +79,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_script.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_script.html">
+      <file leaf-file-name="user-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="36" />
+            <state relative-caret-position="1298">
+              <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+              <folding>
+                <marker date="1498134152000" expanded="true" signature="429:437" ph="ទិន្នន័យអ្នកប្រើប្រាស់" />
+                <marker date="1498134152000" expanded="true" signature="833:839" ph="User Id" />
+                <marker date="1498134152000" expanded="true" signature="899:908" ph="First Name" />
+                <marker date="1498134152000" expanded="true" signature="968:976" ph="Last Name" />
+                <marker date="1498134152000" expanded="true" signature="1036:1042" ph="Gender" />
+                <marker date="1498134152000" expanded="true" signature="1102:1106" ph="Role" />
+                <marker date="1498134152000" expanded="true" signature="1323:1329" ph="User Id" />
+                <marker date="1498134152000" expanded="true" signature="1389:1398" ph="First Name" />
+                <marker date="1498134152000" expanded="true" signature="1458:1466" ph="Last Name" />
+                <marker date="1498134152000" expanded="true" signature="1526:1532" ph="Gender" />
+                <marker date="1498134152000" expanded="true" signature="1592:1596" ph="Role" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin-layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin-layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_kh.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages/message_kh.properties">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="277">
+              <caret line="159" column="19" lean-forward="true" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_en.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages/message_en.properties">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="501">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,7 +151,13 @@
       <find>ch</find>
       <find>sidebar-profile</find>
       <find>4</find>
+      <find>you have</find>
+      <find>Welcome</find>
+      <find>toast</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/resources/static/assets/js</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,24 +193,25 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/admin/_right-side-bar.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/admin/_script.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/admin/_style.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_style.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_footer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_right-side-bar.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin-layout.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/temchannat/spring/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/user-list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user-cu.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_script.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages/message_kh.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages/message_en.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/role-list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/role-cu.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user-list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/shared/_header.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/dashboard.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -534,7 +566,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="FullScreen" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -1002,12 +1034,21 @@
       <workItem from="1498018979850" duration="11268000" />
       <workItem from="1498057664701" duration="178000" />
       <workItem from="1498063605562" duration="1854000" />
-      <workItem from="1498103947556" duration="10361000" />
+      <workItem from="1498103947556" duration="13035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24240000" />
+    <option name="totallyTimeSpent" value="26914000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1025,19 +1066,20 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.495116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.008163265" sideWeight="0.492674" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0051020407" sideWeight="0.492674" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.008433735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15995117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1045,7 +1087,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1098,37 +1139,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5434">
-          <caret line="247" column="62" lean-forward="true" selection-start-line="247" selection-start-column="62" selection-end-line="247" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_style.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1141,7 +1151,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="n#div#2;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,7 +1256,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,30 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -1370,52 +1360,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin-layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/Configuration/WebMvcConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <marker date="1498131933000" expanded="true" signature="429:437" ph="ទិន្នន័យអ្នកប្រើប្រាស់" />
-            <marker date="1498131933000" expanded="true" signature="833:839" ph="User Id" />
-            <marker date="1498131933000" expanded="true" signature="899:908" ph="First Name" />
-            <marker date="1498131933000" expanded="true" signature="968:976" ph="Last Name" />
-            <marker date="1498131933000" expanded="true" signature="1036:1042" ph="Gender" />
-            <marker date="1498131933000" expanded="true" signature="1102:1106" ph="Role" />
-            <marker date="1498131933000" expanded="true" signature="1323:1329" ph="User Id" />
-            <marker date="1498131933000" expanded="true" signature="1389:1398" ph="First Name" />
-            <marker date="1498131933000" expanded="true" signature="1458:1466" ph="Last Name" />
-            <marker date="1498131933000" expanded="true" signature="1526:1532" ph="Gender" />
-            <marker date="1498131933000" expanded="true" signature="1592:1596" ph="Role" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1441,7 +1390,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages/message_en.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1449,23 +1398,30 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages/message_kh.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_script.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/role-cu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="348">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1498133700000" expanded="true" signature="471:482" ph="Add Data Role" />
+            <marker date="1498133700000" expanded="true" signature="822:828" ph="Role ID" />
+            <marker date="1498133700000" expanded="true" signature="1072:1076" ph="Role" />
+            <marker date="1498133700000" expanded="true" signature="1402:1413" ph="Description" />
+            <marker date="1498133700000" expanded="true" signature="1710:1716" ph="Submit" />
+            <marker date="1498133700000" expanded="true" signature="1815:1820" ph="Reset" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/role-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
             <marker date="1498133662000" expanded="true" signature="416:420" ph="Data User" />
             <marker date="1498133662000" expanded="true" signature="416:424" ph="Data Role" />
@@ -1480,18 +1436,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/role-cu.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_left-side-bar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="424">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="65" column="65" lean-forward="false" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
           <folding>
-            <marker date="1498133700000" expanded="true" signature="471:482" ph="Add Data Role" />
-            <marker date="1498133700000" expanded="true" signature="822:828" ph="Role ID" />
-            <marker date="1498133700000" expanded="true" signature="1072:1076" ph="Role" />
-            <marker date="1498133700000" expanded="true" signature="1402:1413" ph="Description" />
-            <marker date="1498133700000" expanded="true" signature="1710:1716" ph="Submit" />
-            <marker date="1498133700000" expanded="true" signature="1815:1820" ph="Reset" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/alpha.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+          <folding>
+            <marker date="1498134152000" expanded="true" signature="429:437" ph="ទិន្នន័យអ្នកប្រើប្រាស់" />
+            <marker date="1498134152000" expanded="true" signature="833:839" ph="User Id" />
+            <marker date="1498134152000" expanded="true" signature="899:908" ph="First Name" />
+            <marker date="1498134152000" expanded="true" signature="968:976" ph="Last Name" />
+            <marker date="1498134152000" expanded="true" signature="1036:1042" ph="Gender" />
+            <marker date="1498134152000" expanded="true" signature="1102:1106" ph="Role" />
+            <marker date="1498134152000" expanded="true" signature="1323:1329" ph="User Id" />
+            <marker date="1498134152000" expanded="true" signature="1389:1398" ph="First Name" />
+            <marker date="1498134152000" expanded="true" signature="1458:1466" ph="Last Name" />
+            <marker date="1498134152000" expanded="true" signature="1526:1532" ph="Gender" />
+            <marker date="1498134152000" expanded="true" signature="1592:1596" ph="Role" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/plugins/materialize/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="1947" column="18" lean-forward="false" selection-start-line="1947" selection-start-column="13" selection-end-line="1947" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1498135749000" expanded="true" signature="2343:2388" ph="..." />
+            <marker date="1498135749000" expanded="true" signature="3808:3819" ph="..." />
+            <marker date="1498135749000" expanded="true" signature="3821:3828" ph="&amp;##9679;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shared/_script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="91" lean-forward="true" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin-layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="159" column="19" lean-forward="true" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/temchannat/spring/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
