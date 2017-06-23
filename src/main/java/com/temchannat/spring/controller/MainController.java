@@ -51,36 +51,5 @@ public class MainController {
 
 
 
-    /*
-
-
-
-
-    @RequestMapping("/user-cu")
-    public String userCUPage(ModelMap model) {
-        model.addAttribute("USER", new User());
-        return "user-cu";
-    }
-
-    @PostMapping("/user-c")
-    public List<User> userC(@ModelAttribute User user, ModelMap model) {
-        users.add(user);
-        model.addAttribute("USERS", users);
-        return users;
-    }
-
-
-//    @RequestMapping("/role-cu")
-//    public String roleCUPage(ModelMap model) {
-//        model.addAttribute("USER", new User());
-//        return "role-cu";
-//    }
-
-//    @RequestMapping("/role-c")
-//    @ResponseBody
-//    public User roleC(@ModelAttribute User user) {
-//        return user;
-//    }
-*/
 
 }

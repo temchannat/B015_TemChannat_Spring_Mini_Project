@@ -5,48 +5,34 @@ package com.temchannat.spring.model;
  */
 public class User {
 
-    private int userId;
-    private String firstName;
-    private String lastName;
+    private int id;
     private String username;
-    private String gender;
-    private String role;
     private String email;
+    private String gender;
+    private String phoneNumber;
+    private String status;
+    private String userHash;
+    private String createDate;
 
-    public User() {}
 
-    public User(int userId, String firstName, String lastName, String gender, String username,String email, String role) {
-        this.userId = userId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
+    public User(int id, String username, String email, String gender, String phoneNumber, String status, String userHash, String createDate) {
+        this.id = id;
         this.username = username;
-        this.role = role;
         this.email = email;
+        this.gender = gender;
+        this.phoneNumber = phoneNumber;
+        this.status = status;
+        this.userHash = userHash;
+        this.createDate = createDate;
     }
 
-    public int getUserId() {
-        return userId;
+
+    public int getId() {
+        return id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -57,8 +43,12 @@ public class User {
         this.username = username;
     }
 
-    public String getRole() {
-        return role;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getGender() {
@@ -69,15 +59,35 @@ public class User {
         this.gender = gender;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public String getEmail() {
-        return email;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getUserHash() {
+        return userHash;
+    }
+
+    public void setUserHash(String userHash) {
+        this.userHash = userHash;
+    }
+
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
     }
 }
