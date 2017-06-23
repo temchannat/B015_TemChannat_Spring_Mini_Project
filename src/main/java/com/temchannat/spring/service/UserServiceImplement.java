@@ -1,11 +1,15 @@
 package com.temchannat.spring.service;
 
 import com.temchannat.spring.model.User;
-import com.temchannat.spring.repository.UserRepositoryImplement;
+import com.temchannat.spring.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * Created by temchannat on 6/22/17.
@@ -14,21 +18,48 @@ import java.util.List;
 @Service
 public class UserServiceImplement implements UserService {
 
-    UserRepositoryImplement userRepositoryImplement;
+    private UserRepository userRepository;
 
     @Autowired
-    public UserServiceImplement(UserRepositoryImplement userRepositoryImplement) {
-        this.userRepositoryImplement = userRepositoryImplement;
+    public UserServiceImplement(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
+
 
     @Override
     public List<User> userList() {
-        return userRepositoryImplement.userList();
+        return userRepository.userList();
     }
 
     @Override
-    public boolean addUser(User user) {
-        return userRepositoryImplement.addUser(user);
+    public boolean save(User user) {
+
+        String userHash = UUID.randomUUID().toString();
+        String userStatus = "1";
+        String createdDate = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
+
+
+        user.setUserHash(userHash);
+        user.setStatus(userStatus);
+        user.setCreatedDate(createdDate);
+
+        boolean status = userRepository.save(user);
+        if (status) {
+            System.out.print("USER ID " + user.getId());
+            System.out.print("Inserted ");
+        } else {
+            System.out.print("Insert fail");
+        }
+        return status;
     }
 
+    @Override
+    public boolean updateByUserHash(User user) {
+        return userRepository.update(user);
+    }
+
+    @Override
+    public boolean deleteByUserHash(String userHash) {
+        return userRepository.delete(userHash);
+    }
 }

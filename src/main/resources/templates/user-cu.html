@@ -16,41 +16,27 @@
                     <div class="row">
                         <form class="col s12" th:object="${USER}" th:action="@{/user-c}" th:method="POST">
 
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input th:field="*{userId}" type="text" class="validate">
-                                    <label  th:text="#{userId}"></label>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input th:field="*{firstName}" type="text" class="validate">
-                                    <label  th:text="#{firstName}"></label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input th:field="*{lastName}" id="last_name" type="text" class="validate">
-                                    <label for="last_name" th:text="#{lastName}"></label>
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="input-field col s6">
                                     <input th:field="*{username}" type="text" class="validate">
                                     <label  th:text="#{username}"></label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <select th:field="*{gender}">
-                                        <option value="Male" th:text="#{male}"></option>
-                                        <option value="Female" th:text="#{female}"></option>
-                                    </select>
-                                    <label th:text="#{gender}"></label>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
                                     <input th:field="*{email}" type="email" class="validate">
                                     <label th:text="#{email}"></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input th:field="*{phoneNumber}" type="text" class="validate">
+                                    <label  th:text="#{phoneNumber}"></label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <select th:field="*{gender}">
+                                        <option th:value="M" th:text="#{male}"></option>
+                                        <option th:value="F" th:text="#{female}"></option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -64,6 +50,7 @@
 
 
                         </form>
+
                     </div>
                 </div>
             </div>

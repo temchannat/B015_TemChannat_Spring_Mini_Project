@@ -12,10 +12,12 @@ public class User {
     private String phoneNumber;
     private String status;
     private String userHash;
-    private String createDate;
+    private String createdDate;
+
+    public User() {}
 
 
-    public User(int id, String username, String email, String gender, String phoneNumber, String status, String userHash, String createDate) {
+    public User(int id, String username, String email, String gender, String phoneNumber, String status, String userHash, String createdDate) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -23,7 +25,7 @@ public class User {
         this.phoneNumber = phoneNumber;
         this.status = status;
         this.userHash = userHash;
-        this.createDate = createDate;
+        this.createdDate = createdDate;
     }
 
 
@@ -83,11 +85,11 @@ public class User {
         this.userHash = userHash;
     }
 
-    public String getCreateDate() {
-        return createDate;
+    public String getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreateDate(String createDate) {
-        this.createDate = createDate;
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
     }
 }

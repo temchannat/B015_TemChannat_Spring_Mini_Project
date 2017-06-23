@@ -22,9 +22,16 @@
                     <ul>
                         <li><a th:href="@{../user-list}" th:text="#{userList}"></a></li>
                         <li><a th:href="@{../user-cu}" th:text="#{addUser}"></a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="no-padding">
+                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">tag_faces</i><span th:text="#{role}"</span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                <div class="collapsible-body">
+                    <ul>
                         <li><a th:href="@{../role-list}" th:text="#{roleList}"></a></li>
                         <li><a th:href="@{../role-cu}" th:text="#{addRole}"></a></li>
-
                     </ul>
                 </div>
             </li>

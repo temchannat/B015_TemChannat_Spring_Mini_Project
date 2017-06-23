@@ -20,76 +20,44 @@
                            <table id="example" class="display responsive-table datatable-example">
                                 <thead>
                                 <tr>
-                                    <th th:text="#{userId}"></th>
-                                    <th th:text="#{firstName}"></th>
-                                    <th th:text="#{lastName}"></th>
-                                    <th th:text="#{gender}"></th>
+                                    <th th:text="#{id}"></th>
                                     <th th:text="#{username}"></th>
                                     <th th:text="#{email}"></th>
-                                    <th th:text="#{role}"></th>
+                                    <th th:text="#{gender}"></th>
+                                    <th th:text="#{phoneNumber}"></th>
+                                    <th th:text="#{status}"></th>
+                                    <th th:text="#{action}"></th>
 
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th th:text="#{userId}"></th>
-                                    <th th:text="#{firstName}"></th>
-                                    <th th:text="#{lastName}"></th>
-                                    <th th:text="#{gender}"></th>
+                                    <th th:text="#{id}"></th>
                                     <th th:text="#{username}"></th>
                                     <th th:text="#{email}"></th>
-                                    <th th:text="#{role}"></th>
+                                    <th th:text="#{gender}"></th>
+                                    <th th:text="#{phoneNumber}"></th>
+                                    <th th:text="#{status}"></th>
+                                    <th th:text="#{status}"></th>
+                                    <th th:text="#{action}"></th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Channat</td>
-                                    <td>Tem</td>
-                                    <td>Male</td>
-                                    <td>username</td>
-                                    <td>email@gmail.com</td>
-                                    <td>Admin</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Sreypov</td>
-                                    <td>Tan</td>
-                                    <td>Female</td>
-                                    <td>username</td>
-                                    <td>email@gmail.com</td>
-                                    <td>Teacher</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Virak</td>
-                                    <td>Songheng</td>
-                                    <td>Male</td>
-                                    <td>username</td>
-                                    <td>email@gmail.com</td>
-                                    <td>Student</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Bopha</td>
-                                    <td>Von</td>
-                                    <td>Female</td>
-                                    <td>username</td>
-                                    <td>email@gmail.com</td>
-                                    <td>Admin</td>
-                                </tr>
-
                                 <tr th:each="USER : ${USERS}">
-                                    <td th:text="${USER.userId}"></td>
-                                    <td th:text="${USER.firstName}"></td>
-                                    <td th:text="${USER.LastName}"></td>
-                                    <td th:text="${USER.gender}"></td>
+                                    <td th:text="${USER.id}"></td>
                                     <td th:text="${USER.username}"></td>
                                     <td th:text="${USER.email}"></td>
-                                    <td th:text="${USER.role}"></td>
+                                    <td th:text="${USER.gender}"></td>
+                                    <td th:text="${USER.phoneNumber}"></td>
+                                    <td th:text="${USER.status}"></td>
+                                    <td th:text="${USER.userHash}"></td>
+                                    <td>
+
+                                        <a class="btn btn-danger" th:href="@{/user-update(hashcode = ${USER.userHash})}" th:text=""  th:text="#{edit}"></a>
+                                        <a class="btn btn-danger" th:href="@{/user-detail(hashcode = ${USER.userHash})}"  th:text="#{detail}"></a>
+                                        <a class="btn btn-danger" th:href="@{/user-delete/{hashcode}(hashcode = ${USER.userHash})}" th:text="#{delete}"></a>
+                                    </td>
                                 </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -98,6 +66,8 @@
             </div>
 
     </div>
+
+
 
 </body>
 </html>
