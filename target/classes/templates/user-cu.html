@@ -14,8 +14,7 @@
                 <div class="card-content">
                     <span class="card-title" th:text="#{addDataUser}"></span><br>
                     <div class="row">
-                        <form class="col s12" th:object="${USER}" th:action="@{/user-c}" th:method="POST">
-
+                        <form class="col s12" th:action="${saveStatus}==true? @{/user-save} : @{/user-update(hashcode=${USER.userHash})}" th:object="${USER}" th:method="POST">
 
                             <div class="row">
                                 <div class="input-field col s6">
@@ -38,7 +37,10 @@
                                         <option th:value="F" th:text="#{female}"></option>
                                     </select>
                                 </div>
+
                             </div>
+
+
 
                             <div class="row">
                                 <div class="input-field col s12">

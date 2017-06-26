@@ -25,7 +25,7 @@
                                     <th th:text="#{email}"></th>
                                     <th th:text="#{gender}"></th>
                                     <th th:text="#{phoneNumber}"></th>
-                                    <th th:text="#{status}"></th>
+
                                     <th th:text="#{action}"></th>
 
                                 </tr>
@@ -37,8 +37,7 @@
                                     <th th:text="#{email}"></th>
                                     <th th:text="#{gender}"></th>
                                     <th th:text="#{phoneNumber}"></th>
-                                    <th th:text="#{status}"></th>
-                                    <th th:text="#{status}"></th>
+
                                     <th th:text="#{action}"></th>
                                 </tr>
                                 </tfoot>
@@ -49,12 +48,10 @@
                                     <td th:text="${USER.email}"></td>
                                     <td th:text="${USER.gender}"></td>
                                     <td th:text="${USER.phoneNumber}"></td>
-                                    <td th:text="${USER.status}"></td>
-                                    <td th:text="${USER.userHash}"></td>
-                                    <td>
 
-                                        <a class="btn btn-danger" th:href="@{/user-update(hashcode = ${USER.userHash})}" th:text=""  th:text="#{edit}"></a>
-                                        <a class="btn btn-danger" th:href="@{/user-detail(hashcode = ${USER.userHash})}"  th:text="#{detail}"></a>
+                                    <td>
+                                        <a class="btn btn-primary" th:href="@{/user-edit/{hashcode}(hashcode = ${USER.userHash})}"  th:text="#{edit}"></a>
+                                        <a class="btn btn-danger" th:href="@{/user-detail/{hashcode}(hashcode = ${USER.userHash})}"  th:text="#{detail}"></a>
                                         <a class="btn btn-danger" th:href="@{/user-delete/{hashcode}(hashcode = ${USER.userHash})}" th:text="#{delete}"></a>
                                     </td>
                                 </tr>

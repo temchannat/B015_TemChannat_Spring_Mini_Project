@@ -62,4 +62,10 @@ public class UserServiceImplement implements UserService {
     public boolean deleteByUserHash(String userHash) {
         return userRepository.delete(userHash);
     }
+
+    @Override
+    public User findOneUser(String userHash) {
+        User user = userRepository.findOneUser(userHash);
+        return user;
+    }
 }

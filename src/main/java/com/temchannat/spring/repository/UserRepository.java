@@ -22,6 +22,10 @@ public interface UserRepository {
    List<User> userList();
 
 
+    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash FROM users WHERE user_hash = #{userHash}")
+    User findOneUser(@Param("userHash") String userHash);
+
+
 
     @Insert("INSERT INTO users (username, email, gender, phonenumber,status, user_hash)" +
             "   VALUES (" +
@@ -54,6 +58,9 @@ public interface UserRepository {
             "phonenumber = #{user.phoneNumber} " +
             "WHERE user_hash = #{user.userHash}")
     boolean update(@Param("user") User user);
+
+
+
 
 
 
