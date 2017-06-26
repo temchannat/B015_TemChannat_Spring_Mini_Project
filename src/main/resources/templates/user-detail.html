@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-                layout:decorator="admin-layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="admin-layout">
 <head>
     <meta charset="UTF-8">
     <title>Details</title>
 </head>
 <body>
 
-    <div layout:fragment="content">
-        <div class="row">
-            <div class="col s12">
-                <div class="page-title" th:text="#{userDetail}"></div>
-            </div>
-            <div class="col s12 m12 l12">
-                <div class="card">
-                    <div class="card-content">
-                        <table th:object="${USER}" id="example" class="display responsive-table datatable-example">
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col s12">
+            <div class="page-title" th:text="#{userDetail}"></div>
+        </div>
+        <div class="col s12 m12 l12">
+            <div class="card">
+                <div class="card-content">
+                    <table th:object="${USER}" id="example" class="display responsive-table datatable-example">
 
+                        <tr>
+                            <th th:text="#{id}"></th>
+                            <th th:text="*{id}"></th>
+                        </tr>
+                        <tr>
+                            <th th:text="#{username}"></th>
+                            <th th:text="*{username}"></th>
+                        </tr>
+                        <tr>
+                            <th th:text="#{email}"></th>
+                            <th th:text="*{email}"></th>
+                        </tr>
+                        <tr>
+                            <th th:text="#{gender}"></th>
+                            <th th:text="*{gender}"></th>
+                        </tr>
+                        <tr>
+                            <th th:text="#{phoneNumber}"></th>
+                            <th th:text="*{phoneNumber}"></th>
+                        </tr>
 
-                            <tr>
-                                <th th:text="#{id}"></th>
-                                <th th:text="*{id}"></th>
-                            </tr>
-                            <tr>
-                                <th th:text="#{username}"></th>
-                                <th th:text="*{username}"></th>
-                            </tr>
-                            <tr>
-                                <th th:text="#{email}"></th>
-                                <th th:text="*{email}"></th>
-                            </tr>
-                            <tr>
-                                <th th:text="#{gender}"></th>
-                                <th th:text="*{gender}"></th>
-                            </tr>
-                            <tr>
-                                <th th:text="#{phoneNumber}"></th>
-                                <th th:text="*{phoneNumber}"></th>
-                            </tr>
-
-                        </table>
-                        <a class="btn btn-danger" href="/user-list"  th:text="#{back}"></a>
-                    </div>
-
-
-
+                    </table>
+                    <a class="btn btn-danger" href="/user-list" th:text="#{back}"></a>
                 </div>
-
             </div>
         </div>
     </div>
+</div>
 
 </body>
 </html>

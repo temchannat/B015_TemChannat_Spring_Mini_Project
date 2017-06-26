@@ -30,7 +30,6 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
         registry.addViewController("/role-list").setViewName("/role-list");
         registry.addViewController("/user-list").setViewName("/user-list");
 
-
     }
 
     @Override

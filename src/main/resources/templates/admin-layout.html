@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="description" content="Responsive Admin Dashboard Template" />
-    <meta name="keywords" content="admin,dashboard" />
-    <meta name="author" content="Steelcoders" />
+    <meta name="description" content="Responsive Admin Dashboard Template"/>
+    <meta name="keywords" content="admin,dashboard"/>
+    <meta name="author" content="Steelcoders"/>
 
     <title layout:title-pattern="$CONTENT_TITLE - $DECORATOR_TITLE"> Spring </title>
 
@@ -15,26 +15,25 @@
 </head>
 <body>
 
-    <div class="mn-content fixed-sidebar">
+<div class="mn-content fixed-sidebar">
 
-        <div th:replace="@{/shared/_header}"></div>
+    <div th:replace="@{/shared/_header}"></div>
 
-        <div th:replace="@{/shared/_left-side-bar}"></div>
+    <div th:replace="@{/shared/_left-side-bar}"></div>
 
-        <main class="mn-inner inner-active-sidebar">
+    <main class="mn-inner inner-active-sidebar">
 
-            <div layout:fragment="content"></div>
+        <div layout:fragment="content"></div>
 
-        </main>
+    </main>
 
-        <div th:replace="@{/shared/_footer}"></div>
+    <div th:replace="@{/shared/_footer}"></div>
 
-    </div>
+</div>
 
-        <div class="left-sidebar-hover"></div>
+<div class="left-sidebar-hover"></div>
 
-        <div th:replace="@{/shared/_script}"></div>
-
+<div th:replace="@{/shared/_script}"></div>
 
 
 </body>

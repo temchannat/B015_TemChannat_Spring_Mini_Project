@@ -14,18 +14,35 @@ import java.util.List;
 @Repository
 public interface UserRepository {
 
+    /**
+     * Getting all Users to put in a list
+     *
+     * @return
+     */
     @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash FROM users WHERE STATUS = '1'")
     @Results(value = {
             @Result(property = "phoneNumber", column = "phonenumber"),
             @Result(property = "userHash", column = "user_hash")
     })
-   List<User> userList();
+    List<User> userList();
 
 
-    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash FROM users WHERE user_hash = #{userHash}")
+    /**
+     * Select only one user by userHash
+     *
+     * @param userHash
+     * @return
+     */
+    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash as userHash FROM users WHERE user_hash = #{userHash}")
     User findOneUser(@Param("userHash") String userHash);
 
 
+    /**
+     * Insert/Save to database
+     *
+     * @param user
+     * @return
+     */
 
     @Insert("INSERT INTO users (username, email, gender, phonenumber,status, user_hash)" +
             "   VALUES (" +
@@ -46,11 +63,22 @@ public interface UserRepository {
     boolean save(@Param("user") User user);
 
 
-
+    /**
+     * Delete user, but actually only set status to ZERO(0) so it doesn't select
+     *
+     * @param userHash
+     * @return
+     */
     @Update("UPDATE users SET status = '0' WHERE user_hash = #{userHash}")
     boolean delete(@Param("userHash") String userHash);
 
 
+    /**
+     * Update users by userHash
+     *
+     * @param user
+     * @return
+     */
     @Update("UPDATE users SET " +
             "username = #{user.username}, " +
             "email = #{user.email}, " +
@@ -58,17 +86,6 @@ public interface UserRepository {
             "phonenumber = #{user.phoneNumber} " +
             "WHERE user_hash = #{user.userHash}")
     boolean update(@Param("user") User user);
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

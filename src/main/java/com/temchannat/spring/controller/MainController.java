@@ -28,14 +28,12 @@ public class MainController {
     @Autowired
     public MainController(UserServiceImplement userServiceImplement) {
         this.userServiceImplement = userServiceImplement;
-
     }
 
     @RequestMapping("/user-list")
     public String userList(ModelMap modelMap) {
         users = userServiceImplement.userList();
         modelMap.addAttribute("USERS", users);
-
         return "user-list";
     }
 
@@ -47,7 +45,7 @@ public class MainController {
     }
 
     @PostMapping("/user-save")
-    public String userSave(@ModelAttribute("USER") User user, ModelMap modelMap){
+    public String userSave(@ModelAttribute("USER") User user, ModelMap modelMap) {
         userServiceImplement.save(user);
         modelMap.addAttribute("USERS", users);
         return "redirect:/user-list";
@@ -55,15 +53,14 @@ public class MainController {
     }
 
 
-
     @RequestMapping("/user-delete/{userHash}")
-    public String deleteUser(@ModelAttribute("userHash") String userHash, ModelMap model) {
+    public String deleteUser(@PathVariable("userHash") String userHash) {
         userServiceImplement.deleteByUserHash(userHash);
         return "redirect:/user-list";
     }
 
 
-    @GetMapping ("/user-edit/{userHash}")
+    @GetMapping("/user-edit/{userHash}")
     public String editUser(@PathVariable("userHash") String userHash, ModelMap modelMap) {
         System.out.println("USER HASH IS " + userHash);
         User user = userServiceImplement.findOneUser(userHash);
@@ -72,25 +69,19 @@ public class MainController {
         return "user-cu";
     }
 
-    @RequestMapping("/user-update")
-    public String userUpdate(@ModelAttribute("user") User user, @RequestParam("userhash") String userhash) {
-        System.out.println(userhash);
-        user.setUserHash(userhash);
+    @PostMapping("/user-update")
+    public String userUpdate(@ModelAttribute("user") User user) {
         userServiceImplement.updateByUserHash(user);
         return "redirect:/user-list";
     }
 
 
     @RequestMapping("/user-detail/{userHash}")
-        public String userDetails(@PathVariable("userHash") String userHash, ModelMap model) {
-            User user = userServiceImplement.findOneUser(userHash);
-            model.addAttribute("USER", user);
-            return "user-detail";
-        }
-
-
-
-
+    public String userDetails(@PathVariable("userHash") String userHash, ModelMap model) {
+        User user = userServiceImplement.findOneUser(userHash);
+        model.addAttribute("USER", user);
+        return "user-detail";
+    }
 
 
 }

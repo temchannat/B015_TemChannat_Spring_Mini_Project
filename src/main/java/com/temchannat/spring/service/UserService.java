@@ -13,9 +13,13 @@ import java.util.List;
 public interface UserService {
 
     List<User> userList();
+
     boolean save(User user);
+
     boolean updateByUserHash(User user);
+
     boolean deleteByUserHash(String userHash);
+
     User findOneUser(String userHash);
 
 

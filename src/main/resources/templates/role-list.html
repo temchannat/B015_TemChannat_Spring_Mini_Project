@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-                layout:decorator="admin-layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="admin-layout">
 <head>
     <meta charset="UTF-8">
     <title>Role List</title>
 </head>
 <body>
 
-    <div layout:fragment="content">
-        <div class="row">
-            <div class="col s12">
-                <div class="page-title" th:text="#{dataRole}"></div>
-            </div>
-            <div class="col s12 m12 l12">
-                <div class="card">
-                    <div class="card-content">
-                        <table id="example" class="display responsive-table datatable-example">
-                            <thead>
-                            <tr>
-                                <th th:text="#{roleId}"></th>
-                                <th th:text="#{role}"></th>
-                                <th th:text="#{description}"></th>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col s12">
+            <div class="page-title" th:text="#{dataRole}"></div>
+        </div>
+        <div class="col s12 m12 l12">
+            <div class="card">
+                <div class="card-content">
+                    <table id="example" class="display responsive-table datatable-example">
+                        <thead>
+                        <tr>
+                            <th th:text="#{roleId}"></th>
+                            <th th:text="#{role}"></th>
+                            <th th:text="#{description}"></th>
 
 
-                            </tr>
-                            </thead>
-                            <tfoot>
-                            <tr>
-                                <th th:text="#{userId}"></th>
-                                <th th:text="#{role}"></th>
-                                <th th:text="#{description}"></th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th th:text="#{userId}"></th>
+                            <th th:text="#{role}"></th>
+                            <th th:text="#{description}"></th>
 
-                            </tr>
-                            </tfoot>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Admin</td>
-                                <td>Can access to all information and make change in this page</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Teacher</td>
-                                <td>Teacher Student</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Student</td>
-                                <td>Study</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Cleaner</td>
-                                <td>Clean all area</td>
-                            </tr>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Admin</td>
+                            <td>Can access to all information and make change in this page</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Teacher</td>
+                            <td>Teacher Student</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Student</td>
+                            <td>Study</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cleaner</td>
+                            <td>Clean all area</td>
+                        </tr>
 
-                            </tbody>
-                        </table>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="left-sidebar-hover"></div>
+<div class="left-sidebar-hover"></div>
 
-    <!-- Javascripts -->
-    <script th:src="@{/resources/static/assets/plugins/jquery/jquery-2.2.0.min.js}"></script>
-    <script th:src="@{/resources/static/assets/plugins/materialize/js/materialize.min.js}"></script>
-    <script th:src="@{/resources/static/assets/plugins/material-preloader/js/materialPreloader.min.js}"></script>
-    <script th:src="@{/resources/static/assets/plugins/jquery-blockui/jquery.blockui.js}"></script>
-    <script th:src="@{/resources/static/assets/plugins/datatables/js/jquery.dataTables.min.js}"></script>
-    <script th:src="@{/resources/static/assets/js/alpha.min.js}"></script>
-    <script th:src="@{/resources/static/assets/js/pages/table-data.js}"></script>
+<!-- Javascripts -->
+<script th:src="@{/resources/static/assets/plugins/jquery/jquery-2.2.0.min.js}"></script>
+<script th:src="@{/resources/static/assets/plugins/materialize/js/materialize.min.js}"></script>
+<script th:src="@{/resources/static/assets/plugins/material-preloader/js/materialPreloader.min.js}"></script>
+<script th:src="@{/resources/static/assets/plugins/jquery-blockui/jquery.blockui.js}"></script>
+<script th:src="@{/resources/static/assets/plugins/datatables/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{/resources/static/assets/js/alpha.min.js}"></script>
+<script th:src="@{/resources/static/assets/js/pages/table-data.js}"></script>
 
 </body>
 </html>
