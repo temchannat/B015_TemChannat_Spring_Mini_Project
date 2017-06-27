@@ -30,6 +30,33 @@ public class MainController {
         this.userServiceImplement = userServiceImplement;
     }
 
+
+    /**
+     * Dashboard or home page
+     * Display Total of Users, Total of Male, Total of Female
+     *
+     * @param modelMap
+     * @return
+     */
+    @RequestMapping({"/dashboard", "/"})
+    public String dashboardPage(ModelMap modelMap) {
+        int totalUsers = userServiceImplement.countTotalUsers();
+        int totalMale = userServiceImplement.countMale();
+        int totalFemale = userServiceImplement.countFemale();
+
+        modelMap.addAttribute("TOTALUSERS", totalUsers);
+        modelMap.addAttribute("TOTALMALE", totalMale);
+        modelMap.addAttribute("TOTALFEMALE", totalFemale);
+
+        return "dashboard";
+    }
+
+    /**
+     * List all users that status = 1
+     *
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("/user-list")
     public String userList(ModelMap modelMap) {
         users = userServiceImplement.userList();
@@ -37,6 +64,12 @@ public class MainController {
         return "user-list";
     }
 
+    /**
+     * User form to input or update
+     *
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("/user-cu")
     public String addUser(ModelMap modelMap) {
         modelMap.addAttribute("USER", new User());
@@ -44,6 +77,13 @@ public class MainController {
         return "user-cu";
     }
 
+    /**
+     * Save Users
+     *
+     * @param user
+     * @param modelMap
+     * @return
+     */
     @PostMapping("/user-save")
     public String userSave(@ModelAttribute("USER") User user, ModelMap modelMap) {
         userServiceImplement.save(user);
@@ -52,7 +92,12 @@ public class MainController {
 
     }
 
-
+    /**
+     * Delete user, but it is just update users status to ZERO (0)
+     *
+     * @param userHash
+     * @return
+     */
     @RequestMapping("/user-delete/{userHash}")
     public String deleteUser(@PathVariable("userHash") String userHash) {
         userServiceImplement.deleteByUserHash(userHash);
@@ -60,6 +105,14 @@ public class MainController {
     }
 
 
+    /**
+     * When users click edit, it goes to this method first and then
+     * redirect to /user-update
+     *
+     * @param userHash
+     * @param modelMap
+     * @return
+     */
     @GetMapping("/user-edit/{userHash}")
     public String editUser(@PathVariable("userHash") String userHash, ModelMap modelMap) {
         System.out.println("USER HASH IS " + userHash);
@@ -69,6 +122,12 @@ public class MainController {
         return "user-cu";
     }
 
+    /**
+     * Update users and then redirect to /user-list
+     *
+     * @param user
+     * @return
+     */
     @PostMapping("/user-update")
     public String userUpdate(@ModelAttribute("user") User user) {
         userServiceImplement.updateByUserHash(user);
@@ -76,6 +135,13 @@ public class MainController {
     }
 
 
+    /**
+     * User Details
+     *
+     * @param userHash
+     * @param model
+     * @return
+     */
     @RequestMapping("/user-detail/{userHash}")
     public String userDetails(@PathVariable("userHash") String userHash, ModelMap model) {
         User user = userServiceImplement.findOneUser(userHash);

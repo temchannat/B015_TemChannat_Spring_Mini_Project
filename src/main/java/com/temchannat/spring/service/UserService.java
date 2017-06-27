@@ -22,5 +22,11 @@ public interface UserService {
 
     User findOneUser(String userHash);
 
+   int countTotalUsers();
+
+   int countMale();
+
+   int countFemale();
+
 
 }

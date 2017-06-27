@@ -68,4 +68,21 @@ public class UserServiceImplement implements UserService {
         User user = userRepository.findOneUser(userHash);
         return user;
     }
+
+    @Override
+    public int countTotalUsers() {
+        return userRepository.countTotalUsers();
+    }
+
+    @Override
+    public int countMale() {
+        return userRepository.countMale();
+    }
+
+    @Override
+    public int countFemale() {
+        return userRepository.countFemale();
+    }
+
+
 }

@@ -19,7 +19,7 @@ public interface UserRepository {
      *
      * @return
      */
-    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash FROM users WHERE STATUS = '1'")
+    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash FROM users WHERE STATUS = '1' ORDER BY id")
     @Results(value = {
             @Result(property = "phoneNumber", column = "phonenumber"),
             @Result(property = "userHash", column = "user_hash")
@@ -86,6 +86,31 @@ public interface UserRepository {
             "phonenumber = #{user.phoneNumber} " +
             "WHERE user_hash = #{user.userHash}")
     boolean update(@Param("user") User user);
+
+
+    /**
+     * Count total users
+     *
+     * @return
+     */
+    @Select("SELECT COUNT(*) as total_user FROM users WHERE status = '1'")
+    int countTotalUsers();
+
+    /**
+     * Count Total Male
+     *
+     * @return
+     */
+    @Select("SELECT COUNT(gender) FROM users WHERE gender = 'M' AND status = '1'")
+    int countMale();
+
+    /**
+     * Count total Female
+     *
+     * @return
+     */
+    @Select("SELECT COUNT(gender) FROM users WHERE gender = 'F' AND status = '1'")
+    int countFemale();
 
 
 }

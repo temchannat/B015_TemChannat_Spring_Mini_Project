@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-                xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-                layout:decorator="admin-layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="admin-layout">
 <head>
     <meta charset="UTF-8">
     <title>Add Role</title>
 </head>
 <body>
 
-    <div layout:fragment="content">
-        <div class="col s12 m12 l6">
-            <div class="card">
-                <div class="card-content">
-                    <span class="card-title" th:text="#{addDataRole}"></span><br>
-                    <div class="row">
-                        <form class="col s12">
+<div layout:fragment="content">
+    <div class="col s12 m12 l6">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title" th:text="#{addDataRole}"></span><br>
+                <div class="row">
+                    <form class="col s12">
 
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input  type="text" class="validate">
-                                    <label th:text="#{roleId}"></label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input  type="text" class="validate">
-                                    <label th:text="#{role}"></label>
-                                </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" class="validate">
+                                <label th:text="#{roleId}"></label>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input  type="text" class="validate">
-                                    <label th:text="#{description}"></label>
-                                </div>
-
-
+                            <div class="input-field col s6">
+                                <input type="text" class="validate">
+                                <label th:text="#{role}"></label>
                             </div>
-
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input th:type="submit" class="btn btn-primary" th:value="#{submit}">
-                                    <input th:type="reset" class="btn btn-warning" th:value="#{reset}">
-
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" class="validate">
+                                <label th:text="#{description}"></label>
                             </div>
 
 
-                        </form>
-                    </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input th:type="submit" class="btn btn-primary" th:value="#{submit}">
+                                <input th:type="reset" class="btn btn-warning" th:value="#{reset}">
+
+                            </div>
+                        </div>
+
+
+                    </form>
                 </div>
             </div>
-
-
         </div>
+
+
     </div>
+</div>
 
 </body>
 </html>

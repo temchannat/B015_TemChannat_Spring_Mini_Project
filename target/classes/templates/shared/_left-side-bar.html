@@ -13,11 +13,13 @@
         </div>
 
         <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-            <li class="no-padding active"><a class="waves-effect waves-grey active" th:href="@{../dashboard}"><i class="material-icons">settings_input_svideo</i><span th:text="#{dashboard}"></span></a></li>
+            <li class="no-padding active"><a class="waves-effect waves-grey active" th:href="@{../dashboard}"><i
+                    class="material-icons">settings_input_svideo</i><span th:text="#{dashboard}"></span></a></li>
 
 
             <li class="no-padding">
-                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">desktop_windows</i><span th:text="#{admin}"></span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">desktop_windows</i><span
+                        th:text="#{admin}"></span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
                     <ul>
                         <li><a th:href="@{../user-list}" th:text="#{userList}"></a></li>
@@ -27,7 +29,8 @@
                 </div>
             </li>
             <li class="no-padding">
-                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">tag_faces</i><span th:text="#{role}"</span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">tag_faces</i><span
+                        th:text="#{role}"</span><i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
                     <ul>
                         <li><a th:href="@{../role-list}" th:text="#{roleList}"></a></li>
