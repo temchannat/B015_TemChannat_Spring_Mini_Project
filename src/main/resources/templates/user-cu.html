@@ -18,6 +18,14 @@
                           th:action="${saveStatus}==true? @{/user-save} : @{/user-update}" th:method="POST">
 
                         <div class="row">
+                            <div class="input-field col s6" style="visibility: hidden">
+                                <input th:field="*{userHash}" type="text" class="validate">
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
                             <div class="input-field col s6">
                                 <input th:field="*{username}" type="text" class="validate">
                                 <label th:text="#{username}"></label>

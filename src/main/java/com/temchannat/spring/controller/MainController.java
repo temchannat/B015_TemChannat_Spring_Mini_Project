@@ -115,7 +115,6 @@ public class MainController {
      */
     @GetMapping("/user-edit/{userHash}")
     public String editUser(@PathVariable("userHash") String userHash, ModelMap modelMap) {
-        System.out.println("USER HASH IS " + userHash);
         User user = userServiceImplement.findOneUser(userHash);
         modelMap.addAttribute("USER", user);
         modelMap.addAttribute("saveStatus", false);
@@ -130,6 +129,7 @@ public class MainController {
      */
     @PostMapping("/user-update")
     public String userUpdate(@ModelAttribute("user") User user) {
+        System.out.println("USER HASH IS " + user.getUserHash());
         userServiceImplement.updateByUserHash(user);
         return "redirect:/user-list";
     }

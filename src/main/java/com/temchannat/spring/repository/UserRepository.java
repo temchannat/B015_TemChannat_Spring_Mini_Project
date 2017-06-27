@@ -33,7 +33,7 @@ public interface UserRepository {
      * @param userHash
      * @return
      */
-    @Select("SELECT id, username, email, gender, phonenumber,  status, user_hash as userHash FROM users WHERE user_hash = #{userHash}")
+    @Select("SELECT id, username, email, gender, phonenumber, status, user_hash as userHash FROM users WHERE user_hash = #{userHash}")
     User findOneUser(@Param("userHash") String userHash);
 
 
